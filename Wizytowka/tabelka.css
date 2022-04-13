@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(126, 88, 43);
+    margin:0;
+    font-family: 'Red Hat Mono', monospace;
+  }
+body > header{  
+    background-color:rgba(73, 143, 26, 0.252);
+    border: 15px solid rgba(143, 26, 26, 0.479);
+    text-align: center;
+
+  }
+
+.tableField{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Red Hat Mono', monospace;
+}

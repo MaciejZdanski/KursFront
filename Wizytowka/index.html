@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- CZCIONKI-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="js_typy_danych.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>M.Zdański - wizytówka</h1> <br>
+    </header>
+    
+    <nav> 
+       <ul>
+            <li>
+              <a href="#home">
+               Home
+            </a>
+            </li>
+            <li>
+            <a href="#projects">
+                Projekty
+            </a>
+            </li>
+            <li>
+            <a href="#contact">
+                Kontakt
+            </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <header id="home">
+            <div>
+                <img src="zdjecie.jpg" alt="zdjecie">
+            </div>
+        <br>
+        <br>
+        <br>              
+            <div class="headerText">
+                <h2>O mnie</h2>
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quod, earum labore dolores quo 
+                deserunt possimus adipisci in a veniam porro hic sapiente debitis placeat maxime modi accusamus 
+                dolorum facilis.
+                </p>
+                <br>
+                <br>
+            </div>
+        </header>
+
+        <article>
+            <header>
+                <!--Tabelka-->
+                <h2>Technologie</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, accusantium? Temporibus rem repudiandae explicabo, adipisci placeat error beatae deserunt? Quidem voluptatibus quia eaque explicabo itaque et! Eveniet repellendus culpa nihil!</p>
+            </header>
+            <div class="tableField">
+                <table border="1">
+                    <tr> 
+                        <th>Lp.</th>
+                        <th>Technologia</th>
+                        <th>Moduł</th>
+                        <th>Ocena</th>
+                    </tr>
+                    <tr> 
+                        <th rowspan="2">1.</th>
+                        <th rowspan="2">HTML5</th>
+                        <th>Semantyka</th>
+                        <th>⭐⭐⭐⭐⭐</th>
+                    </tr>
+                    <tr> 
+                        <th>Tabelki</th>
+                        <th>⭐⭐⭐⭐⭐</th>
+                    </tr>
+                    <tr> 
+                        <th>2.</th>
+                        <th>CSS</th>
+                        <th colspan="2">nie dotyczy</th>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <section id="projects">
+            <br>
+            <br>
+            <h2>Projekty</h2>
+            <br>
+            <br>
+            <div class="carousel">
+                <div class="cItem">
+                    <h3>Projekt 1</h3>
+                    <p>Lorem, ipsum dolor sit amet. </p>
+                </div>
+                <div class="cItem active">
+                    <h3>Projekt 2</h3>
+                    <p>Lorem, ipsum dolor sit amet. </p>
+                </div>
+                <div class="cItem">
+                    <h3>Projekt 3</h3>
+                    <p>Lorem, ipsum dolor sit amet. </p>
+                </div>
+            </div>
+        </section>               
+    </main>
+
+    <article id="contact">   <!-- 5. Kontakt -->
+        <header class="headerText"> 
+            <h2>Kontakt</h2> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>   
+        </header>
+                
+        <form action="/index.html">
+            <input type="email" id="" placeholder="Podaj maila"><br>
+            <input type="text" id="" placeholder="Tytuł"> <br>
+            <textarea name="" id="" cols="30" rows="10">  </textarea><br>
+            <input type="submit" value="Wyślij"> 
+        </form>
+    </article>  
+    <br>
+    <br>
+       
+    <footer> 
+        <p> Copyright © by ZdańskiMaciej </p>
+    </footer>
+    <br>
+    <br>
+    <!-- popup cookies-->
+    <div class="cookies">
+        <p> Ta strona nie używa plików cookies</p>
+        <button>OK</button>
+    </div>
+</body>
+</html>

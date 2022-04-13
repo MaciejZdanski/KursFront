@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(119, 92, 58);
+    margin:0;
+    font-family: 'Red Hat Mono', monospace;
+  }
+
+  body > header{  /* header który jest bezpośrednim dzieckiem body */
+    background-color:rgba(143, 26, 26, 0.677);;
+    border: 15px solid rgba(143, 26, 26, 0.677);
+    text-align: center;
+
+  }
+  
+  nav {
+      position: sticky;
+      top: 0;
+  }
+  nav ul {  /* GŁÓWNA NAWIGACJA */
+    border:15px black;
+    background-color: rgba(143, 26, 26, 0.677);
+    border-top: none;
+    list-style-type:none;  /* punktowanie list */
+    padding:0;
+    margin:0;
+    display:flex; 
+    justify-content: space-evenly; /* równomierne rozdzielenie */
+    /*  
+      flex-direction: column;
+        właściwość do "kopania" flexa 
+        zmiana row na kolumn powoduje zmianę ról między
+        justify-content a align-items
+      align-tems,
+      justify-content: 
+        flex-start - domyślna wartość
+        flex-end - wyświetl na końcu (odwrotnie do domyślnej)
+        center - wyśrodkuj
+        space-around - taka sama przestrzeń wokół każdego dziecka
+        space-evelny - taka sama przestrzeń między elementami
+        space-between - przestrzeń TYLKO pomiędzy elementami
+    */
+  }
+  
+  /* POJEDYNCZE PRZYCISKI (Home, Projekty, Kontakt) */
+  
+  nav ul li{ /* styl elementu po nakierowaniu nań myszką */
+    margin: 10px;
+    border:2px solid rgba(161, 130, 45, 0);
+    padding: 5px 15px;
+    background-color: rgb(255, 0, 34);
+    color: #fff;
+    border-radius: 15px;           /*zaokrąglenie krawędzi*/
+    cursor: pointer;               /*wygląd kursora*/
+    transition: .5s;               /* czas "pojawiania się" zmian */
+  }
+
+  nav ul li:hover{  /*najechanie na przycisk*/
+      background-color: black;
+      border-color: rgb(87, 64, 26);
+      color: #000;
+  }
+
+  nav ul li:active{  /*kliknięcie na przycisk*/
+    border-color: rgb(20, 90, 97);
+    background-color:rgb(224, 208, 178);
+    transition: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color:#fff;
+  }
+
+  .cookies{
+    border:5px solid rgb(56, 56, 56);
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: rgb(56, 56, 56);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5px;
+  }
+  main{
+    padding:2em;
+  }
+  .imgField{
+    text-align: center;
+  }
+  .headerText{
+    padding: 0 2em 1em 2em;
+ 
+  }
+  img{
+    max-width:100%;
+    border-radius:10%;
+  }
+  
+  @media (min-width:768px){
+    main > header,
+    main > article, 
+    #contact,
+    #project {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main > header > *,
+    main > article > *,
+    #contact > *,
+    #project > * {
+      flex:1;
+    }
+  }
+  
+  /* MAIN ARTICLE (TECHNOLOGIE) */
+  .tableField{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact form input,
+  #contact form textarea{
+    background-color: rgba(255, 255, 255, 0.636); 
+    width:80%;
+    padding:.5rem;
+    outline: 0;
+    margin-bottom:.5rem;
+    border:1px solid rgb(132, 82, 82);
+    border-radius:6px;
+    font-family:inherit;
+  }
+  
+  #contact form button{
+    background-color: rgba(255, 255, 255, 0.636); 
+    padding:.2rem 1rem;
+    border-radius:8px;
+    outline:0;
+    border:none;
+    cursor: pointer;
+    font-family:inherit;
+  }
+  
+  footer{
+    padding:.5em 1.5em;
+    text-align: right;
+  }
+
+  .carousel {
+    /* border: 2px dashed red; */
+    display: flex;
+    align-items: center;
+  }
+  .cItem {
+    /* border: 2px dashed blue; */
+    flex: 1;
+    padding: 0 .5em;
+  }
+  .cItem p { display: none; }
+
+  .active {
+    /*border: 5px dashed; */ 
+    flex: 3;
+  }
+  .active p{
+    display: block;
+  }

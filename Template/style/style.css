@@ -1,0 +1,220 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/photo.jpg");
+  /*cover - przykrywa cały obszar */
+  background-size: cover;
+  background-position: center top;
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+}
+body > header {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+body > header > * {
+  display: flex;
+  align-items: center;
+}
+body > header .pageLogo a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+body > header .pageLogo a b {
+  font-size: 30px;
+}
+body > header nav {
+  position: relative;
+  min-height: 48px;
+}
+body > header nav #toggler {
+  display: none;
+}
+body > header nav label {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+body > header nav label div {
+  transition: 0.5s;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 10%;
+}
+body > header nav label div:nth-child(1) {
+  top: 17.5%;
+}
+body > header nav label div:nth-child(2) {
+  top: 45%;
+}
+body > header nav label div:nth-child(3) {
+  top: 72.5%;
+}
+body > header nav ul {
+  font-family: "Lato";
+  background-color: rgba(65, 63, 63, 0.8);
+  border-radius: 10px;
+  padding: 0 0.7em;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  margin: 0;
+}
+body > header nav ul li {
+  padding: 0.7em 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+body > header nav #toggler:checked ~ ul {
+  display: flex;
+}
+body > header nav #toggler:checked ~ label {
+  border-color: blue;
+}
+body > header nav #toggler:checked ~ label div:nth-child(1) {
+  background-color: red;
+  transform: rotate(-135deg);
+  top: 45%;
+}
+body > header nav #toggler:checked ~ label div:nth-child(2) {
+  opacity: 0;
+}
+body > header nav #toggler:checked ~ label div:nth-child(3) {
+  background-color: red;
+  transform: rotate(-45deg);
+  top: 45%;
+}
+@media (min-width: 768px) {
+  body > header nav label {
+    display: none;
+  }
+  body > header nav ul {
+    font-size: 1.2em;
+    padding: 0.6em 3em;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    position: static;
+  }
+}
+body main {
+  margin-top: 10vh;
+  padding: 0 1em;
+}
+body main .wrapper > header {
+  flex: 1;
+}
+body main .wrapper h1 {
+  margin-bottom: 0;
+  font-size: clamp(3em, 4vw, 4em);
+}
+body main .wrapper h2 {
+  margin-top: 0;
+  font-size: clamp(1.5em, 3vw, 2.5em);
+}
+body main .wrapper button {
+  background-color: transparent;
+  border: 1px solid white;
+  min-height: 1.5em;
+  border-radius: 1.5em;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  font-size: clamp(1em, 2vw, 1.5em);
+  margin-bottom: 10vh;
+}
+body main .wrapper > article {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+body main .wrapper > article .playButton {
+  background-color: transparent;
+  border: 1px solid white;
+  min-height: 1.5em;
+  border-radius: 1.5em;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.5em;
+  border-radius: 50%;
+  position: relative;
+}
+body main .wrapper > article .playButton span {
+  position: absolute;
+  top: 0;
+  left: 0.245em;
+  font-size: 2.5em;
+}
+body main .wrapper > article header .container {
+  padding-left: 1em;
+  overflow-y: scroll;
+  max-height: 45vh;
+}
+@media (min-width: 768px) {
+  body main {
+    margin-left: 15vw;
+  }
+  body main .wraper {
+    display: flex;
+  }
+  body main .about {
+    border: 2px dashed red;
+    width: 40%;
+  }
+}
+body footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+@media (min-width: 768px) {
+  body footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  body footer .social {
+    flex-direction: column;
+  }
+  body footer .social div {
+    margin: 0.8em;
+  }
+}/*# sourceMappingURL=style.css.map */

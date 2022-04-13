@@ -1,0 +1,19 @@
+// STAŁA ( nie można jej nadpisać)
+const z = 5;
+
+// ZMIENNA (może się zmieniać)
+let x = 7;
+
+// STRING (ciąg znaków) - w cudzysłowiu 
+const string = "hello world";
+
+// OBIEKTY - elementy w klmrach  klucz: wartość;
+const obj = {
+    name: "Projekt 1",
+    date: "30.03.2022"
+}
+
+console.log(project)
+
+// TABLICE (arrays) - zbiory elementów
+const fibArray = [0, 1, 1, 2, 3, 5, 8];
