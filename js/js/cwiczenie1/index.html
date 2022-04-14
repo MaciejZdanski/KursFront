@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdjęcia</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        .carousel article{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .carousel article img{
+        max-width:80%;
+        }
+        .carousel article div{
+        flex:1;
+        padding:2em .5em;
+        border:2px dashed red;
+        cursor:pointer;
+        text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Ćwiczenie</h1>
+
+    <div class="carousel">
+        <header>
+            <h2 class="title"></h2>
+        </header>
+        <article>
+            <div class="left">left</div>
+            <img class="image">
+            <div class="right">right</div>
+        </article>
+    </div>
+    
+</body>
+</html>
