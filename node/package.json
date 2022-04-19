@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MaciejZdanski/KursFront/issues"
   },
-  "homepage": "https://github.com/MaciejZdanski/KursFront#readme"
+  "homepage": "https://github.com/MaciejZdanski/KursFront#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
