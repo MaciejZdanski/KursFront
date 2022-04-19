@@ -1,6 +1,8 @@
-console.log("Hello world!");
+const express = require('express')
+const app = express()
 
-const x = {
-    asd : 'asd',
-    asdx : 'asd',
-}
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
+app.listen(80)
