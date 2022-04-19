@@ -1,0 +1,19 @@
+{
+  "name": "kursfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciejZdanski/KursFront.git"
+  },
+  "author": "Zdanski Maciej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaciejZdanski/KursFront/issues"
+  },
+  "homepage": "https://github.com/MaciejZdanski/KursFront#readme"
+}
