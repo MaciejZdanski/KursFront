@@ -1,0 +1,18 @@
+body {
+  background-color: coral;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 10%;
+}
+
+form {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+form > * {
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0.5em;
+}/*# sourceMappingURL=style.css.map */
