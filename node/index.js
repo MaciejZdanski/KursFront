@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/src/static')))
 // POBIERANIE INFORMACJI OD KLIENTA (Z FORMULARZA)
 app.get('/sendForm', (req, res) => {
   // CZYTAMY PLIK DATA.JSON I ZAPISUJEMY JAKO OLDCONTENT (string)
-  const oldContent = fs.readFileSync('data.json',{encoding:'utf-8'});
+  const oldContent = fs.readFileSync('node/data.json',{encoding:'utf-8'});
 
   // ZMIENIAMY STRINGA NA TABLICĘ OBIEKTÓW
   const proceedData = JSON.parse(oldContent);
@@ -24,7 +24,7 @@ app.get('/sendForm', (req, res) => {
   const newData = JSON.stringify(proceedData, null , 2)
 
   // ZAPISUJEMY NOWĄ TABLICĘ JAKO STRINGA
-  fs.writeFileSync('data.json', newData)
+  fs.writeFileSync('node/data.json', newData)
   res.send('ok')
 })
 
@@ -33,7 +33,7 @@ app.get('/sendForm', (req, res) => {
 app.get('/getComments', (req, res) => {
   
   // PRZECZYTAJ DATA.JSON
-  const readJSON =  fs.readFileSync('data.json',{encoding:'utf-8'});
+  const readJSON =  fs.readFileSync('node/data.json',{encoding:'utf-8'});
   
   // ZMIEN STRINGA NA TABLICĘ
   const proceedData = JSON.parse(readJSON);
