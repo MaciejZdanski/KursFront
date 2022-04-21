@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NodeJS</title>
+    <title>NodeJS App</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h> Hello World Guys! </h>
-        <img src="style/img/zdjecie.jpg" alt="zdjecie">
-        
-        <form action="sendForm" method="get">
-            <input type="text" name="nick" id="" placeholder="Twój Nick">
-            <textarea name="comment" placeholder="napisz komentarz"></textarea>
-            <button type="submit">DODAJ KOMENTARZ</button>
-
-        </form>
-
-        <script>
-
-            const string = "[1,2,3,45,6,7]";
-            const arr = [1,2,3,45,6,7];
-            console.log(arr)
-            console.log(JSON.stringify(arr))
-        
-        </script>
-
+        <img src="style/img/zdjecie.jpg" alt="zdjecie"> 
     </header>
+
+    <form action="sendForm" method="get">
+        <input type="text" name="nick" id="" placeholder="Twój Nick">
+        <textarea name="comment" placeholder="napisz komentarz"></textarea>
+        <button type="submit">DODAJ KOMENTARZ</button>
+
+    </form>
+
+    <section class="commentsSection"></section>
+
 </body>
+
 </html>

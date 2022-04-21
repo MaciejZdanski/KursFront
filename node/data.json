@@ -1,10 +1,14 @@
 [
   {
-    "nick": "maciek",
-    "comment": "komentarz"
+    "nick": "maciek1",
+    "comment": "komentarz1"
   },
   {
-    "nick": "maciek",
+    "nick": "maciek1",
+    "comment": "komentarz2"
+  },
+  {
+    "nick": "maciek1",
     "comment": "komentarz2"
   }
 ]

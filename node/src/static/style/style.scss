@@ -1,17 +1,32 @@
 body {
-    background-color: coral
-}
-img{
-    max-width:80%;
-    border-radius:10%;
-  }
+    background-color: coral;
 
-form {
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    > * {
-        padding: .2em .5em;
-        margin: .2em .5em;
+    header{
+        display:flex;
+        align-items:center;
+       
+        img{
+            max-width:80%;
+            border-radius:10%;
+        }
     }
+
+
+    form{
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        > * {
+            padding: .2em .5em;
+            margin: .2em .5em;
+        }
+    }
+    .commentsSection{
+        margin:1.5em 0;
+        border:5px dashed blue;
+        article{
+          border:5px dashed yellow;
+          padding:2em;
+        }
+      }
 }
